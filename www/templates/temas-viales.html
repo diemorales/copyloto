@@ -1,0 +1,10 @@
+<ion-view view-title="Temas Viales">
+  <ion-content ng-controller="TemViaCtrl">
+      <ion-list>
+        <ion-item ng-repeat="item in items" class="item-icon-right item-text-wrap titulos" href="#/app/temasviales/articulos/{{item.id}}">
+          {{item.title}}
+          <i class='icon ion-chevron-right'></i>
+        </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>

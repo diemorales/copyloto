@@ -1,0 +1,11 @@
+<ion-view view-title="Temas Viales">
+  <ion-content overflow-scroll="true" ng-controller="TVArtsCtrl">
+      <ion-list>
+        <ion-item ng-repeat="art in articulos" class="item-icon-right item-text-wrap" href="#/app/temasviales/articulo/{{art.articulo}}">
+            <h2 class="titulos">{{art.nombre}}</h2>
+          <p class="subTitulo">Artículo nro.: {{art.articulo}}</p>
+          <i class='icon ion-chevron-right'></i>
+        </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>

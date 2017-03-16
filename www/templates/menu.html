@@ -1,0 +1,39 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-energized" align-title="center">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-content scroll="false">
+      <ion-list>
+        <ion-item menu-close class="item item-thumbnail text-center" href="#">
+            <img src="img/i_top-side-logo.png">
+        </ion-item>      
+        <ion-item menu-close class="item item-icon-right" href="#/app/home">
+          Inicio <i class='icon ion-home dark'></i>
+        </ion-item>      
+        <ion-item menu-close class="item item-icon-right"  href="#/app/informaciones-utiles">
+          Informaciones Útiles 
+          <i class='icon ion-medkit dark'></i>
+        </ion-item>
+        <ion-item menu-close class="item item-icon-right" href="#/app/nosotros">
+          Acerca de Nosotros 
+          <i class='icon ion-ios-information-outline dark'></i>
+        </ion-item>
+        <ion-item menu-close class="item item-icon-right" ng-click="shareAnywhere()">
+          Recomendar
+           <i class='icon ion-android-share-alt dark'></i>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

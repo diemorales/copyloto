@@ -1,0 +1,11 @@
+<ion-view view-title="Infracciones - Ley 5016">
+  <ion-content overflow-scroll="true" ng-controller="InfraCtrl">
+      <ion-list>
+        <ion-item ng-repeat="infra in infracciones" class="item-icon-right item-text-wrap" href="#/app/infracciones/{{infra.id}}">
+          	<h2 class="titulos">Artículo {{infra.articulo}}, inciso: {{infra.inciso}}</h2>
+      		<p class="subTitulo">{{infra.nombre}}</p>
+          <i class='icon ion-chevron-right'></i>
+        </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>

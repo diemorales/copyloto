@@ -1,0 +1,37 @@
+<ion-view view-title="Infracción">
+  <ion-content ng-controller="InfraDetCtrl">
+    <div class="card">
+      <div class="item item-divider item-text-wrap titulos">
+        {{nombre}}
+      </div>
+      <div class="item item-text-wrap desc">
+        <p class="subTitulo">Artículo nro: {{articulo}}, inciso {{inciso}}</p>
+        <hr>
+         <p>
+          {{descripcion}}
+         <br></p> 
+      </div>
+      <div class="item item-text-wrap desc">
+        <p class="subTitulo">Autoridades Competentes</p>
+        <hr>
+         <p>
+          <strong>Patrulla Caminera:</strong> Rutas nacionales y departamentales, así como ramales y caminos vecinales que atraviesen los municipios.
+          <br><br>
+          <strong>Policía Municipal:</strong> Zona urbana de su respectiva jurisdicción .
+         </p> 
+      </div>      
+      <div class="item item-text-wrap desc">
+        <p class="subTitulo">Sanción</p>
+        <hr>
+         <p>
+          {{sancion_desc}}
+          <br>
+          <strong>Multa:</strong> {{sancion_mul}} Jornales Mínimos. <br>
+          <strong>Equivalencia:</strong> {{sancion_gs}} Gs.
+
+          <br><br>
+         </p> 
+      </div>            
+  </div>
+  </ion-content>
+</ion-view>

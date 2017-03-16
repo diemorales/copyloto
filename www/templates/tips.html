@@ -1,0 +1,15 @@
+<ion-view title="TIPS">
+  <ion-content ng-controller="TipsCtrl">
+		<ion-slide-box active-slide="myActiveSlide" ng-if="items">
+		  <ion-slide ng-repeat="i in items" >
+			<div class="card">
+			  <div class="item item-text-wrap tall">
+			  <i class="icon ion-quote dark"></i>
+			  <h2>{{i.titulo}}</h2>
+			  {{i.desc}}
+			  </div>
+			</div>
+		  </ion-slide>
+		</ion-slide-box>		
+	</ion-content>
+</ion-view>

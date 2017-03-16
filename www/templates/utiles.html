@@ -1,0 +1,22 @@
+    <ion-view view-title="INFORMACIÓN ÚTIL" >
+      <ion-content ng-controller="InfoCtrl">
+      <div class="card">
+          <div class="item item-divider titulos">
+            Contactos 
+          </div>
+        <ion-list>
+          <ion-item ng-repeat="util in utiles" class="item-text-wrap item-icon-right" ng-click="llamar({{util.telefono}})">
+                 <span class="item-note">
+                    <pre>&nbsp; &nbsp; Llamar</pre>
+                  </span>
+                  <i class="icon ion-android-call calm"></i>
+                   <h2>{{util.nombre}}</h2> 
+                  {{util.telefono}}
+                  <br>{{util.direccion}}
+                  <br>{{util.ciudad}}, Paraguay 
+          </ion-item>
+          <br>
+        </ion-list>
+      </div>
+      </ion-content>
+    </ion-view>
